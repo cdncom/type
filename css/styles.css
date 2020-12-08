@@ -37,6 +37,8 @@ section {
 .center {
     float: none;
     margin: 0 auto;
+    /* margin-right: auto; 
+    margin-left: auto; */
 }
 
 
@@ -52,7 +54,7 @@ h1, h2, h3, h4, h5, h6, p {
 body, html {
     font-family: 'Rubik', 'Helvetica Neue', Arial, sans-serif;
     font-size: 16px;
-    line-height: 1.6;
+    /* line-height: 1.6; */
 }
 
 /* xs */
@@ -76,8 +78,23 @@ body, html {
 }
 
 
+/* xs */
+@media (max-width: 767px) { 
+    h1.display { font-size: 2.4rem; }
+    h1 { font-size: 3rem;}
+    h2 { font-size: 2.5rem; }
+    h3 { font-size: 2rem; }
+    h4 { font-size: 1.5rem; }
+    h5 { font-size: 1rem; }
+    h6 { font-size: .875rem; }
+    p { font-size: 1rem; }
+    p.lead { font-size: 1.125rem; }
+    p.description { font-size: .875rem; } 
+    a.link { font-size: .75rem; }  
+}
 
-h1.display { font-size: 3.125rem; }
+/* sm 768 up */
+/* h1.display { font-size: 3.125rem; }
 h1 { font-size: 3rem;}
 h2 { font-size: 2.5rem; }
 h3 { font-size: 2rem; }
@@ -87,9 +104,32 @@ h6 { font-size: .875rem; }
 p { font-size: 1rem; }
 p.lead { font-size: 1.125rem; }
 p.description { font-size: .875rem; } 
+a.link { font-size: .75rem; } */
+
+
+h1.display { font-size: 2.75rem; }
+h1 { font-size: 2.375rem;}
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.125rem; }
+h5 { font-size: 1rem; }
+h6 { font-size: .875rem; }
+p { font-size: 1rem; }
+p.lead { font-size: 1.25rem; }
+p.description { font-size: .875rem; } 
 a { font-size: .75rem; }
 
+/* line height */
+h1, h2, h3, h4, h5 {
+    line-height: 1.6;
+}
 
+h6, a.link {
+    line-height: 1.2; 
+}
+
+
+/* h1-h6 specs */
 h1, h2, h3 {
     font-weight: 400;
 }
@@ -123,11 +163,13 @@ h6 {
     text-transform: uppercase;
 }
 
+/* p specs */
 p, 
 p.lead, 
 p.description {
     font-weight: 300;
     letter-spacing: 0.04em;
+    line-height: 1.6;
     margin-bottom: 1rem;
 }
 
@@ -135,7 +177,7 @@ p.description {
     line-height: 1.7; 
 } */
 
-a {
+a.link {
     font-weight: 500; 
     letter-spacing: .24em; 
     text-transform: uppercase;
