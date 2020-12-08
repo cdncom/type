@@ -120,7 +120,11 @@ p.description { font-size: .875rem; }
 a { font-size: .75rem; }
 
 /* line height */
-h1, h2, h3, h4, h5 {
+h1, h2, h3 {
+    line-height: 1.25; 
+}
+
+h4, h5 {
     line-height: 1.6;
 }
 
